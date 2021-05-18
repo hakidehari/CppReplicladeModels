@@ -19,7 +19,7 @@ public:
     double getBeta();
 private:
     void calcPrbMatrix();
-    map<string, vector<double>> prbMatrix;
+    map<char, vector<double>> prbMatrix;
     int t;
     double alpha;
     double beta;
@@ -31,7 +31,7 @@ public:
     string evolve(string);
 private:
     void calcPrbMatrix();
-    map<string, vector<double>> prbMatrix;
+    map<char, vector<double>> prbMatrix;
     int t;
     double alpha;
     double beta;

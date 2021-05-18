@@ -30,15 +30,28 @@ void Kimura80::calcPrbMatrix() {
     vector<double> T = {transversion, sameNuc, transition, transversion};
     vector<double> C = {transversion, transition, sameNuc, transversion};
     vector<double> G = {transition, transversion, transversion, sameNuc};
-    prbMatrix["A"] = A;
-    prbMatrix["T"] = T;
-    prbMatrix["C"] = C;
-    prbMatrix["G"] = G;
+    prbMatrix['A'] = A;
+    prbMatrix['T'] = T;
+    prbMatrix['C'] = C;
+    prbMatrix['G'] = G;
     t += 1;
 }
 
 string Kimura80::evolve(string seq) {
-    map<string, int> nucPos {{"A", 0}, {"T", 1}, {"C", 2}, {"G", 3}};
-    return "";
+    map<char, int> nucPosMap {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
+    string resultantString = "";
+    for (int i = 0; i < seq.size(); i++) {
+        char cur = seq[i];
+        if (cur == '-') {
+            resultantString += cur;
+            continue;
+        }
+        double firstRoll = rand() / double(RAND_MAX);
+        vector<double> probability = prbMatrix.find(cur);
+        if (firstRoll <= probability) {
+
+        }
+    }
+    return resultantString;
 }
 
