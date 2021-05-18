@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.cpp
+evolve.h
+/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
+cmath
+-
+
+/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
+string
+-
+map
+-
+vector
+-
+
+/Users/hakidehari/CLionProjects/CppEvolutionaryModels/main.cpp
+iostream
+-
+evolve.h
+/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
+
