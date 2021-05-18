@@ -14,23 +14,25 @@ using namespace std;
 class Kimura80 {
 public:
     Kimura80(double);
-    string evolve();
+    string evolve(string);
+    double getAlpha();
+    double getBeta();
 private:
     void calcPrbMatrix();
     map<string, vector<double>> prbMatrix;
     int t;
-    int alpha;
-    int beta;
+    double alpha;
+    double beta;
 };
 
 class JukesCantor69 {
 public:
     JukesCantor69(double);
-    string evolve();
+    string evolve(string);
 private:
     void calcPrbMatrix();
     map<string, vector<double>> prbMatrix;
     int t;
-    int alpha;
-    int beta;
+    double alpha;
+    double beta;
 };

@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.cpp
+C:/Users/haki_/Desktop/CppReplicladeModels/evolve.cpp
 evolve.h
-/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
+C:/Users/haki_/Desktop/CppReplicladeModels/evolve.h
 cmath
 -
 
-/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
+C:/Users/haki_/Desktop/CppReplicladeModels/evolve.h
 string
 -
 map
 -
 vector
 -
-
-/Users/hakidehari/CLionProjects/CppEvolutionaryModels/main.cpp
-iostream
--
-evolve.h
-/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.h
 

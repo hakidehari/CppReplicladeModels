@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/hakidehari/CLionProjects/CppEvolutionaryModels/evolve.cpp" "/Users/hakidehari/CLionProjects/CppEvolutionaryModels/cmake-build-debug/CMakeFiles/CppEvolutionaryModels.dir/evolve.cpp.o"
-  "/Users/hakidehari/CLionProjects/CppEvolutionaryModels/main.cpp" "/Users/hakidehari/CLionProjects/CppEvolutionaryModels/cmake-build-debug/CMakeFiles/CppEvolutionaryModels.dir/main.cpp.o"
+  "C:/Users/haki_/Desktop/CppReplicladeModels/evolve.cpp" "C:/Users/haki_/Desktop/CppReplicladeModels/cmake-build-debug/CMakeFiles/CppEvolutionaryModels.dir/evolve.cpp.obj"
+  "C:/Users/haki_/Desktop/CppReplicladeModels/main.cpp" "C:/Users/haki_/Desktop/CppReplicladeModels/cmake-build-debug/CMakeFiles/CppEvolutionaryModels.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

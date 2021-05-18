@@ -6,11 +6,20 @@
 #include <cmath>
 
 
+
 Kimura80::Kimura80(double mu) {
     t = 0;
     alpha = mu;
     beta = mu / 3;
     calcPrbMatrix();
+}
+
+double Kimura80::getAlpha() {
+    return alpha;
+}
+
+double Kimura80::getBeta() {
+    return beta;
 }
 
 void Kimura80::calcPrbMatrix() {
@@ -26,5 +35,10 @@ void Kimura80::calcPrbMatrix() {
     prbMatrix["C"] = C;
     prbMatrix["G"] = G;
     t += 1;
+}
+
+string Kimura80::evolve(string seq) {
+    map<string, int> nucPos {{"A", 0}, {"T", 1}, {"C", 2}, {"G", 3}};
+    return "";
 }
 
