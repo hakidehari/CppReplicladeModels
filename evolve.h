@@ -24,6 +24,7 @@ private:
     double alpha;
     double beta;
     vector<char> seqList;
+    map<char, int> nucPosMap = {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
 };
 
 class JukesCantor69 {
@@ -36,6 +37,30 @@ private:
     map<char, vector<double>> prbMatrix;
     int t;
     double alpha;
-    double beta;
     vector<char> seqList;
+    map<char, int> nucPosMap = {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
+};
+
+class HKY85 {
+public:
+    HKY85();
+    string evolve(string);
+private:
+    void calcPrbMatrix(double, int);
+    map<char, vector<double>> prbMatrix;
+    int t;
+    vector<char> seqList;
+    map<char, int> nucPosMap = {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
+};
+
+class F81 {
+public:
+    F81();
+    string evolve(string);
+private:
+    void calcPrbMatrix(double, int);
+    map<char, vector<double>> prbMatrix;
+    int t;
+    vector<char> seqList;
+    map<char, int> nucPosMap = {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
 };

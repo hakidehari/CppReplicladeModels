@@ -26,7 +26,6 @@ void JukesCantor69::calcPrbMatrix(double alpha, int t) {
 }
 
 string JukesCantor69::evolve(string seq) {
-    map<char, int> nucPosMap {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
     string resultantString = "";
     for (int i = 0; i < seq.size(); i++) {
         char cur = seq[i];
@@ -88,7 +87,6 @@ void Kimura80::calcPrbMatrix(double alpha, double beta, int t) {
 }
 
 string Kimura80::evolve(string seq) {
-    map<char, int> nucPosMap {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
     string resultantString = "";
     for (int i = 0; i < seq.size(); i++) {
         char cur = seq[i];
