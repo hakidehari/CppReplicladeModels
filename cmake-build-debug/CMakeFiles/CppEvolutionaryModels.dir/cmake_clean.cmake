@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CppEvolutionaryModels.dir/evolve.cpp.obj"
-  "CMakeFiles/CppEvolutionaryModels.dir/main.cpp.obj"
-  "CppEvolutionaryModels.exe"
-  "CppEvolutionaryModels.exe.manifest"
-  "CppEvolutionaryModels.lib"
+  "CMakeFiles/CppEvolutionaryModels.dir/evolve.cpp.o"
+  "CMakeFiles/CppEvolutionaryModels.dir/main.cpp.o"
+  "CppEvolutionaryModels"
   "CppEvolutionaryModels.pdb"
 )
 

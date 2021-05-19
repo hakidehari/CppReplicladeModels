@@ -18,21 +18,24 @@ public:
     double getAlpha();
     double getBeta();
 private:
-    void calcPrbMatrix();
+    void calcPrbMatrix(double, double, int);
     map<char, vector<double>> prbMatrix;
     int t;
     double alpha;
     double beta;
+    vector<char> seqList;
 };
 
 class JukesCantor69 {
 public:
     JukesCantor69(double);
     string evolve(string);
+    double getAlpha();
 private:
-    void calcPrbMatrix();
+    void calcPrbMatrix(double, int);
     map<char, vector<double>> prbMatrix;
     int t;
     double alpha;
     double beta;
+    vector<char> seqList;
 };
