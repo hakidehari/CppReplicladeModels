@@ -116,3 +116,32 @@ string Kimura80::evolve(string seq) {
     return resultantString;
 }
 
+HKY85::HKY85(string seq) {
+    calculateBaseFrequencies(seq);
+    t = 0;
+    calcPrbMatrix();
+    sequence = seq;
+}
+
+void HKY85::calculateBaseFrequencies(string seq) {
+    for (int i = 0; i < seq.size(); i++) {
+        if (frequencies.count(seq[i])) {
+            frequencies[seq[i]] += 1;
+        } else {
+            frequencies[seq[i]] = 1;
+        }
+    }
+}
+
+void HKY85::calcPrbMatrix() {
+    double A = frequencies['A'] / sequence.size();
+    double C = frequencies['C'] / sequence.size();
+    double G = frequencies['G'] / sequence.size();
+    double T = frequencies['T'] / sequence.size();
+    double k = .333;
+    double beta = 1.0 / ((2*(A*G)*(C*T)) + (2*k*((A*G) + (C*T))));
+
+}
+
+
+

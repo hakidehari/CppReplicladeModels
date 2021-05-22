@@ -43,14 +43,17 @@ private:
 
 class HKY85 {
 public:
-    HKY85();
+    HKY85(string);
     string evolve(string);
 private:
-    void calcPrbMatrix(double, int);
+    string sequence;
+    void calcPrbMatrix();
     map<char, vector<double>> prbMatrix;
     int t;
     vector<char> seqList;
     map<char, int> nucPosMap = {{'A', 0}, {'T', 1}, {'C', 2}, {'G', 3}};
+    map<char, int> frequencies;
+    void calculateBaseFrequencies(string);
 };
 
 class F81 {
